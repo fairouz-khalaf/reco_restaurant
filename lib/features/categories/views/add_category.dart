@@ -23,7 +23,6 @@ class AddCategoryView extends StatefulWidget {
 class _AddCategoryViewState extends State<AddCategoryView> {
   final formKey = GlobalKey<FormState>();
   final categoryNameController = TextEditingController();
-  final categoryDescriptionController = TextEditingController();
 
   @override
   void initState() {
@@ -40,10 +39,7 @@ class _AddCategoryViewState extends State<AddCategoryView> {
       await FirebaseFirestore.instance
           .collection('categories')
           .doc(widget.categoryId)
-          .update({
-            'categoryName': categoryNameController.text,
-            'categoryDescription': categoryDescriptionController.text,
-          });
+          .update({'categoryName': categoryNameController.text});
 
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
@@ -79,7 +75,7 @@ class _AddCategoryViewState extends State<AddCategoryView> {
   @override
   void dispose() {
     categoryNameController.dispose();
-    categoryDescriptionController.dispose();
+
     super.dispose();
   }
 
