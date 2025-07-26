@@ -67,7 +67,7 @@ class _ViewMealsByCategoryState extends State<ViewMealsByCategory> {
   double getTotalPrice() {
     return cart.values.fold(
       0.0,
-      (sum, item) => sum + (item['price'] * item['quantity']),
+      (total, item) => total + (item['price'] * item['quantity']),
     );
   }
 
