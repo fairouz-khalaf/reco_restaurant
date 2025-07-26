@@ -29,11 +29,11 @@ jobs:
         run: |
           flutter test || echo "No tests found, skipping failure."
 
-      - name: Build APK
-        run: flutter build apk --debug
+      - name: Build APK (release mode)
+        run: flutter build apk --release
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: app-debug.apk
-          path: build/app/outputs/flutter-apk/app-debug.apk
+          name: app-release.apk
+          path: build/app/outputs/flutter-apk/app-release.apk
