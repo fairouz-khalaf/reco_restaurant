@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:reco_restaurant/core/theme/app_theme.dart';
-import 'package:reco_restaurant/features/categories/components/add_category_form.dart';
+import 'package:reco_restaurant/features/categories/views/components/add_category_form.dart';
 
 class AddCategoryView extends StatefulWidget {
   final bool isEdit;
