@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppColors {
-  static const Color primary = Color(0xFFFF6B00); // Orange
+  static const Color primary = Color(0xFFFF6B00);
   static const Color background = Colors.white;
   static const Color textPrimary = Colors.black;
   static const Color textSecondary = Colors.black54;

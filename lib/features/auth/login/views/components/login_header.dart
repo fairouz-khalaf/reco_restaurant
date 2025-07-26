@@ -7,17 +7,15 @@ class LoginHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          "Welcome to Reco Restaurant",
-          style: Theme.of(context).textTheme.bodyMedium,
-        ),
+        Text("Welcome to Reco Restaurant", style: theme.textTheme.bodyMedium),
         20.h.pH,
         Text(
           "Login",
-          style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+          style: theme.textTheme.bodyLarge?.copyWith(
             fontSize: 18.sp,
             fontWeight: FontWeight.bold,
           ),

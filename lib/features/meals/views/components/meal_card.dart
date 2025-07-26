@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:reco_restaurant/core/helper/extensions.dart';
 import 'package:reco_restaurant/core/routing/named_router.dart';
 import 'package:reco_restaurant/core/theme/app_theme.dart';
 
@@ -67,8 +68,7 @@ class MealCard extends StatelessWidget {
                 IconButton(
                   icon: const Icon(Icons.edit, color: Colors.green),
                   onPressed: () {
-                    Navigator.pushNamed(
-                      context,
+                    context.pushNamed(
                       Routes.addMeal,
                       arguments: {
                         'isEdit': true,

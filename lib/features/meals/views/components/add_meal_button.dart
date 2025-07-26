@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:reco_restaurant/core/helper/extensions.dart';
 import 'package:reco_restaurant/core/routing/named_router.dart';
 import 'package:reco_restaurant/core/theme/app_theme.dart';
 
@@ -23,7 +24,7 @@ class AddMealButton extends StatelessWidget {
       ),
       icon: const Icon(Icons.add, color: AppColors.whiteColor),
       onPressed: () {
-        Navigator.of(context).pushNamed(
+        context.pushNamed(
           Routes.addMeal,
           arguments: {
             'categoryId': categoryId,
