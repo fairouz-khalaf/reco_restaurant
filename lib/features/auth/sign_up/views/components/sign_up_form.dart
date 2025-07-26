@@ -29,7 +29,9 @@ class _SignUpFormFieldsState extends State<SignUpFormFields> {
         password: _passwordController.text.trim(),
       );
       if (!mounted) return;
-      context.pushReplacementNamed(Routes.home);
+      Navigator.of(
+        context,
+      ).pushNamedAndRemoveUntil(Routes.home, (Route<dynamic> route) => false);
     } on FirebaseAuthException catch (e) {
       String message;
       switch (e.code) {

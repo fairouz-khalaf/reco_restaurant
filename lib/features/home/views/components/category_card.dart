@@ -38,10 +38,7 @@ class CategoryCard extends StatelessWidget {
               ),
               Text(
                 category['categoryName'],
-                style:  TextStyle(
-                  fontSize: 16.sp,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
               EditDeleteButtons(category: category),
