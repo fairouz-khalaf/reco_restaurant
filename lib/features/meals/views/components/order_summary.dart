@@ -46,9 +46,9 @@ class OrderSummary extends StatelessWidget {
             padding: const EdgeInsets.only(top: 8),
             child: Text(
               'Total: ${totalPrice.toStringAsFixed(2)} \$',
-              style: const TextStyle(
+              style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 16,
+                fontSize: 16.sp,
                 color: AppColors.primary,
               ),
             ),
