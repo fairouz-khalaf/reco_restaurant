@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "922187412754",
+    "project_id": "reco-restaurant-298cf",
+    "storage_bucket": "reco-restaurant-298cf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922187412754:android:20629107e890ce49dcafcb",
+        "android_client_info": {
+          "package_name": "com.example.reco_restaurant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPfIOZwmzsP3ZZhfDfHYRvTOcm9b7k7bc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
